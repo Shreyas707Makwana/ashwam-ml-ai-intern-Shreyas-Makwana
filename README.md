@@ -56,7 +56,7 @@ Why these choices?
 Run the evaluator end-to-end:
 
 ```bash
-python -m journal_eval run --data ./data --out ./out
+python -m journal_eval run --data ./data --out ./out && cat ./out/score_summary.json
 ```
 
 ## Outputs
