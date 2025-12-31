@@ -4,6 +4,8 @@
 
 Real journals are messy: people write symptoms, food, emotions, and thoughts in free text. There’s no neat label set to lean on. This repo evaluates extractions by anchoring everything to verbatim evidence copied from the journal itself. If the evidence isn’t in the text, we don’t emit it.
 
+The focus of this assignment is evaluation design rather than extraction quality; extraction is intentionally minimal to highlight objective, evidence-based scoring.
+
 ## Why Evidence-Grounded?
 
 - Prevents hallucination: every object includes an `evidence_text` that appears exactly in the journal.
@@ -24,7 +26,7 @@ Restraint is built in:
 
 These rules keep outputs clean and reviewer-friendly.
 
-## Schema (updated)
+## Schema 
 
 - `domain` (enum): symptom | food | emotion | mind
 - `evidence_text` (free text): verbatim substring from the journal
